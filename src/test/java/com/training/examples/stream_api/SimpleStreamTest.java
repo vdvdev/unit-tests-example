@@ -26,4 +26,12 @@ public class SimpleStreamTest {
                 .collect(Collectors.joining(", ")));
     }
 
+    @Test
+    public void sortedTest(){
+        Integer[] ints = {3,15,9,7,9};
+        System.out.println(
+                Arrays.stream(ints).distinct().filter(s -> s>3).sorted().collect(Collectors.toList())
+        );
+    }
+
 }
