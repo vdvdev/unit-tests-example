@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class GroupingBy {
+public class GroupingByTest {
 
     List<String> stringCollection = Arrays.asList("a1", "b1", "c1", "c1", "a1");
 
