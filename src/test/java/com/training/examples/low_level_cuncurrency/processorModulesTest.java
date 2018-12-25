@@ -3,8 +3,6 @@ package com.training.examples.low_level_cuncurrency;
 import org.junit.Test;
 
 public class processorModulesTest {
-    int i;
-    volatile int volatileI;
 
     @Test
     public void differenceInCountTime(){

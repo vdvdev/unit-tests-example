@@ -4,8 +4,10 @@ import entities.Gender;
 import entities.Person;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class GroupinByObjectsTest {
     List<Person> personList = Arrays.asList(

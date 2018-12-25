@@ -2,25 +2,24 @@ package com.training.examples.stream_api;
 
 import entities.Gender;
 import entities.Person;
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class PredicateTest {
-    static List<Person> personList;
+    List<Person> personList;
 
-    static List<Person> sortPersons(List<Person> persons, Predicate<Person> personPredicate) {
+    List<Person> sortPersons(List<Person> persons, Predicate<Person> personPredicate) {
         return persons.stream().filter(personPredicate).collect(Collectors.toList());
     }
 
-    @BeforeClass
-    public static void init() {
+    @Before
+    public void init() {
         personList = Arrays.asList(
                 new Person("Lola", 22, Gender.female),
                 new Person("Ivan", 16, Gender.male),
