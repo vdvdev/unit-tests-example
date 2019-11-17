@@ -1,8 +1,9 @@
 package com.training.examples.low_level_cuncurrency;
 
+import org.junit.Test;
+
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.junit.Test;
 
 public class VolatileTimeTest {
 
